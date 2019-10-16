@@ -33,16 +33,17 @@ console.log(studentList);
        "invoke" the function 
 ***/
 
-function showPage(list, page) => {
+function showPage(list, page) {
    const startIndex = (page * itemsPerPage);
    const endIndex = page * itemsPerPage;
-   for(let i = 0; i < list.lenth; i += 1;) {
+   for (let i = 0; i < list.lenth; i += 1) {
       let li = list[i];
-      if (i >= startIndex && <= endIndex) {
+      if (i >= startIndex && i <= endIndex) {
          li.style.display = '';
       } else {
-            li.style.display = 'none';
-      }
+         li.style.display = 'none';
+      }  
+   }
 }
 
 
