@@ -14,11 +14,14 @@ Rosio Dorson
    will only be used inside of a function, then it can be locally 
    scoped to that function.
 ***/
+// I need variables two global variables.
 
-/*** 
+const studentList;
+const itemsPerPage = 10;
+console.log(studentList);
+/***
    Create the `showPage` function to hide all of the items in the 
    list except for the ten you want to show.
-
    Pro Tips: 
      - Keep in mind that with a list of 54 students, the last page 
        will only display four.
@@ -30,13 +33,24 @@ Rosio Dorson
        "invoke" the function 
 ***/
 
-
+function showPage(list, page) => {
+   const startIndex = (page * itemsPerPage);
+   const endIndex = page * itemsPerPage;
+   for(let i = 0; i < list.lenth; i += 1;) {
+      let li = list[i];
+      if (i >= startIndex && <= endIndex) {
+         li.style.display = '';
+      } else {
+            li.style.display = 'none';
+      }
+}
 
 
 /*** 
    Create the `appendPageLinks function` to generate, append, and add 
-   functionality to the pagination buttons.
-***/
+   functionality to the pagination buttons.***/
+
+
 
 
 
