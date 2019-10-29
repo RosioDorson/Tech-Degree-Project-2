@@ -10,7 +10,7 @@ const studentList = document.querySelectorAll('.student-item');
 const itemsPerPage = 10;
 console.log(studentList);
 
-// Create a function to hid all the students except the number given per page. Here it is 10 but the last page will have 4 since there are 54 students.
+// Create a function to hide all the students except the number given per page. Here it is 10 but the last page will have 4 since there are 54 students.
 function showPage (list, page) {
    const startIndex = (page * itemsPerPage) - itemsPerPage;
    const endIndex = (page * itemsPerPage) - 1;
